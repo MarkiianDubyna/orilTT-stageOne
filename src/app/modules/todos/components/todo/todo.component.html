@@ -1,0 +1,16 @@
+<div class="toDo">
+  <div class="titleContainer">
+    <div [class.green]="toDoStatus" class="checkContainer" (click)="completeToDo()">
+      <img *ngIf="toDoStatus" src="/assets/images/check.svg" alt="comleted_icon">
+    </div>
+    <div>
+      <p [class.textDecoration]="toDoStatus">{{toDo.title}}</p>
+    </div>
+
+  </div>
+  <div class="icons">
+    <img src="/assets/images/edit.svg" alt="icon_edit" (click)="getEditMenu()">
+    <img src="/assets/images/disabled.svg" alt="icon_delete" (click)="getRemoveMenu()">
+  </div>
+</div>
+

@@ -1,0 +1,109 @@
+.signUpForm {
+  width: 740px;
+  border: 1px solid #E1E1E1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.signUpForm p {
+  color: #9798A0;
+  font-size: 16px;
+}
+
+.formHeader {
+  margin-bottom: 50px;
+}
+
+.formHeader h2 {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+}
+
+input {
+  border: 1px solid #9798A0;
+  border-radius: 10px;
+}
+
+button {
+  width: 640px;
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 17px 0 251px;
+}
+
+button:disabled p {
+  color: black;
+}
+
+button p {
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-content: center;
+}
+
+.small {
+  width: 95px;
+  height: 40px;
+}
+
+.middle {
+  width: 295px;
+  height: 40px;
+}
+
+.large {
+  width: 495px;
+  height: 40px;
+}
+
+.inputError {
+  background: #FDF7EB;
+  border: 1px solid #E7A44E;
+  position: relative;
+}
+
+.error p {
+  color: #E7A44E;
+  position: absolute;
+  margin-top: 7px;
+}
+
+button:enabled {
+  background: linear-gradient(90deg, #38EE7E 0%, #1FA49B 100%);
+  color: white;
+  border: none;
+}
+
+button:enabled p {
+  color: white;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainerM {
+  width: 300px;
+}
+
+.inputContainerL {
+  width: 500px;
+}
+
+.inputContainerS {
+  width: 100px;
+}

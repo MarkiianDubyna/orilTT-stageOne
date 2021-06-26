@@ -1,0 +1,39 @@
+.toDo {
+  border: 1px solid #E1E1E1;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.todo p {
+  width: 700px;
+}
+
+.icons {
+  display: flex;
+  column-gap: 25px;
+}
+
+.checkContainer {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.textDecoration {
+  text-decoration: line-through;
+}
+
+.green {
+  background: #2CC88E;
+}

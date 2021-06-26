@@ -1,0 +1,41 @@
+.removeToDoMenu {
+  position: absolute;
+  top: 291px;
+  left: 444px;
+  border: 1px solid #E1E1E1;
+  border-radius: 20px;
+  height: 296px;
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+img {
+  position: inherit;
+  top: 19px;
+  right: 19px;
+}
+
+.removeToDoHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.removeToDoMenu > p {
+  font-style: italic;
+}
+
+button {
+  width: 400px;
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E1E1E1;
+  background: white;
+}

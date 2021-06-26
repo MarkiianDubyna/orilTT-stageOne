@@ -1,0 +1,94 @@
+<div class="signUpForm">
+  <div class="formHeader">
+    <h2> Create Account</h2>
+    <p>Let's get productive together!</p>
+  </div>
+  <form [formGroup]="signUpForm" (ngSubmit)="signUp()" class="form">
+    <div class="inputContainer inputContainerM">
+      <label>Full Name*</label>
+      <input type="text" formControlName="fullName" class="middle">
+    </div>
+    <div class="inputContainer inputContainerM">
+      <label>Username*</label>
+      <input type="text" formControlName="userName" class="middle">
+    </div>
+    <div class="inputContainer inputContainerM">
+      <label>Email*</label>
+      <input type="email" formControlName="email" [class.inputError]="!signUpForm.controls.email.valid" class="middle">
+      <div *ngIf="!signUpForm.controls.email.valid" [class.error]="!signUpForm.controls.email.valid">
+        <p>Please enter a valid email address</p>
+      </div>
+    </div>
+    <div class="inputContainer inputContainerM">
+      <label>Phone number*</label>
+      <input type="string" formControlName="phoneNumber" [class.inputError]="!signUpForm.controls.phoneNumber.valid"
+             class="middle">
+      <div *ngIf="!signUpForm.controls.phoneNumber.valid" [class.error]="!signUpForm.controls.phoneNumber.valid">
+        <p>Please enter a valid phone number</p>
+      </div>
+    </div>
+    <div class="inputContainer inputContainerL">
+      <label>Address line*</label>
+      <input type="text" formControlName="addressLine" class="large">
+    </div>
+    <div class="inputContainer inputContainerS">
+      <label>Suite</label>
+      <input type="text" formControlName="suite" class="small">
+    </div>
+    <div class="inputContainer inputContainerM">
+      <label>City*</label>
+      <input type="text" formControlName="city" class="middle">
+    </div>
+    <div class="inputContainer inputContainerM">
+      <label>ZIP Code*</label>
+      <input type="text" formControlName="zipCode" class="middle">
+    </div>
+    <button [disabled]="!signUpForm.valid">
+      <p>Create Account</p>
+      <img src="/assets/images/vector.svg" alt="button_vector">
+    </button>
+  </form>
+
+
+  <!--<form #signUpForm='ngForm' (ngSubmit)="submit(signUpForm)" class="form">
+    <div class="inputContainerM">
+      <p>Full Name*</p>
+      <input required type="text" name="fullName" [(ngModel)]="user.name" class="middle">
+    </div>
+    <div class="inputContainerM">
+      <p>Username*</p>
+      <input required type="text" name="userName" [(ngModel)]="user.userName" class="middle">
+    </div>
+    <div class="inputContainerM">
+      <p>Email*</p>
+      <input #email="ngModel" required type="email" name="email" [(ngModel)]="user.email" [class.inputError]="!email.valid" class="middle">
+      <div *ngIf="!email.valid" [class.error]="!email.valid">
+        <p>Please enter a valid email address</p>
+      </div>
+    </div>
+    <div class="inputContainerM">
+      <p>Phone number*</p>
+      <input #phoneNumber="ngModel" required type="string" name="phoneNumber" [(ngModel)]="user.phone" [class.inputError]="!phoneNumber.valid" class="middle">
+      <div *ngIf="!phoneNumber.valid" [class.error]="!phoneNumber.valid">
+        <p>Please enter a valid phone number</p>
+      </div>
+    </div>
+    <div class="inputContainerL">
+      <p>Address line*</p>
+      <input required type="text" name="addressLine" [(ngModel)]="user.address.street" class="large">
+    </div>
+    <div class="inputContainerS">
+      <p>Suite</p>
+      <input type="number" name="suite" [(ngModel)]="user.address.suite" class="small">
+    </div>
+    <div class="inputContainerM">
+      <p>City*</p>
+      <input required type="text" name="city" [(ngModel)]="user.address.city" class="middle">
+    </div>
+    <div class="inputContainerM">
+      <p>ZIP Code*</p>
+      <input required type="number" name="zipCode" [(ngModel)]="user.address.zipcode" class="middle">
+    </div>
+      <button [disabled]="!signUpForm.valid">Create Account</button>
+  </form>-->
+</div>

@@ -1,0 +1,19 @@
+.todoContent {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.todoListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoListHeader button {
+  background: linear-gradient(90deg, #38EE7E 0%, #1FA49B 100%);
+  border: none;
+  border-radius: 6px;
+  height: 32px;
+  width: 137px;
+  color: white;
+}

@@ -1,0 +1,17 @@
+<div class="addToDoMenu">
+
+  <div class="addToDoHeader">
+    <h2>Add a ToDo</h2>
+  </div>
+
+  <img src="/assets/images/close.svg" alt="icon_close" (click)="closeAddToDoMenu()">
+
+  <form [formGroup]="addToDoForm" (ngSubmit)="addToDo()" class="form">
+    <textarea type="text" formControlName="toDoTitle" placeholder="Start typing..."></textarea>
+    <button [disabled]="!addToDoForm.valid">
+      <p>Save ToDo</p>
+      <img src="/assets/images/vector.svg" alt="icon_vector">
+    </button>
+  </form>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="editToDoMenu">
+  <div class="editToDoHeader">
+    <h2>Edit a ToDo</h2>
+  </div>
+  <img src="/assets/images/close.svg" alt="icon_close" (click)="closeEditToDoMenu()">
+  <form [formGroup]="editToDoForm" (ngSubmit)="editToDo()" class="form">
+    <div>
+      <textarea type="text" formControlName="toDoTitle">{{toDo.title}}</textarea>
+      <div *ngIf="!editToDoForm.valid" class="emptyField">
+        <p>This field is required</p>
+      </div>
+    </div>
+    <button [disabled]="!editToDoForm.valid">
+      <p>Edit ToDo</p>
+      <img src="/assets/images/vector.svg" alt="icon_vector">
+    </button>
+  </form>
+</div>
